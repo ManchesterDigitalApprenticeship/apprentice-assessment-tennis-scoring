@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="vendor/angular-mocks/angular-mocks.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/home/tennisService.js"></script>
+    <!-- endinject -->
+    <script type="text/javascript" src="templates-app.js"></script>
+
+  </head>
+  <body>
+
+    <div style="margin-top:50px" class="container" ui-view="main"></div>
+
+      <div style="margin-top:50px" class="container">
+
+        <h2>What to do</h2>
+
+          <p>This application keeps track of players' scores in a game of tennis and determines a winner.</p>
+
+          <p> At the moment scores are tracked as a number of points 0, 1, 2, 3, 4 etc for each player, but his isn't quite enough to properly score a game of tennis, and the correct socring rules need to be implemented.</p>
+
+          <ul>
+            <li>Use the application to start and play through a few games of tennis.</li>
+            <li>Read through the code in <mark>app/home/tennisService.js</mark>. Identify what each function in the file does.</li>
+            <li>Identify the function which returns the score line for the game currently in progress.</li>
+            <li>With your partner, discuss what you will have to do to make the score display as described below.</li>
+            <li>Modify the code so that the game is properly scored.</li>
+          </ul>
+
+
+        <h2>Scoring tennis</h2>
+
+        <ol>
+
+        <li> Individual player scores from zero to three points are described as "love", "fifteen", "thirty", and "forty" respectively. e.g.  if player1 has 2 points, and player2 0 points, the score would be "thirty - love"</li>
+
+        <li>If at least three points have been scored by each player, and the scores are equal, the score is "deuce". e.g. if player1 and player2 have both scored 5, the score is "deuce"</li>
+
+        <li>If at least three points have been scored by each player and a player has one more point than his opponent, the score of the game is "advantage" for the player in the lead. e.g. if player1 has scored 4 and player2 3, the score is "advantage player1"</li>
+
+        <li>A game is won by the first player to have won at least four points in total and at least two points more than the opponent.</li>
+
+      </ol>
+
+
+
+      </div>
+
+  </body>
+</html>
