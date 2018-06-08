@@ -18,37 +18,8 @@ You have 45 minutes to work together on a solution. It is not a race to finish b
 
 ## Assessment Quick Start
 
-1. Follow the steps in prerequisites below to get something running.
+1. Open the file app/home/tennisService.js in a text editor.
 
-2. From a terminal/console/whatever window, run gulp webserver
+2. Open index.html in a web browser
 
-3. Open a browser and navigate to http://localhost:8080/#/home
-
-4. Play with the UI
-
-5. Open the tennisService.js file at src/app/home/tennisService.js
-
-6. Good to go.
-
-
-## Prerequisites
-
-Run these commands:
-
-<pre>
-npm install
-bower install
-gulp
-</pre>
-
-You will get an error message if gulp (or bower) isn't installed. If so then you need to run these additional command:
-
-<pre>
-npm install -g bower
-bower install
-</pre>
-
-<pre>
-npm install -g gulp
-gulp
-</pre>
+3. Read the instructions on the index.html page and complete the exercise.
